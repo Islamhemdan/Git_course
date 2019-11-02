@@ -1,0 +1,583 @@
+/*
+================================================
+               Public Style
+================================================               
+*/
+
+html,
+body {
+	height:auto;
+	max-width: 1500px;
+	margin: auto;
+	border: 1px solid rgb(192, 191, 212);
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+	background-color:white;
+}
+/*
+================================================
+              NavBar Style
+================================================               
+*/
+
+header {
+	width: 100%;
+	z-index: 50;
+	position: fixed;
+	display: inline-block;
+}
+.importanttext {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: bolder;
+	background: #155775;
+	border-radius: 25px;
+	padding: 5px;
+	padding-bottom: 5px;
+	color: white;
+
+	box-shadow: inset 20px -3em 3em rgba(3, 41, 36, 0.712), 0 0 0 2px rgba(192, 9, 9, 0),
+		0.3em 1.3em 1em rgba(11, 19, 136, 0.212);
+}
+:before,
+:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+nav {
+	width: 90%;
+	margin-left: 72px;
+	background: #155775;
+	display: inline-block;
+	padding: 16px;
+	font-size: 24px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	position: fixed;
+	height: 80px;
+	max-width: 1500px;
+	margin: auto;
+	border-radius: 15px;
+	box-shadow: inset 20px -3em 3em rgba(9, 83, 73, 0.712), 0 0 0 2px rgba(243, 243, 243, 0.288),
+		0.3em 1.3em 1em rgba(0, 0, 0, 0.3);
+}
+/* box-shadow: 5px 5px 20px; */
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+.menu_right {
+	float:right;
+	margin-right: 0px;
+	text-decoration: none;
+	display: inline-block;
+}
+.menu_right li a {
+	float: right;
+	margin-right: 0px;
+	text-decoration: none;
+}
+nav ul li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+	cursor: default;
+}
+nav ul li a {
+	color: #fff;
+	padding: 14px 16px;
+	font: 20px;
+	text-decoration: none;
+	display: inline-block;
+}
+nav > ul > li {
+	float: left;
+}
+nav ul li:hover > a {
+	color: rgb(255, 255, 255);
+	background: #2bc9c9f5;
+}
+nav ul li a.active {
+	color: #fff;
+	background: #107272bb;
+}
+nav ul ul {
+	width: auto;
+	min-width: 200px;
+	display: none;
+	background: #053f37d5;
+	position: absolute;
+	z-index: 555;
+	text-align: left;
+	border-radius: 20px;
+}
+nav li:hover > ul {
+	display: block;
+}
+nav ul ul ul {
+	left: 100%;
+	top: 0;
+}
+nav ul ul li {
+	width: 100%;
+	display: block;
+	float: none;
+}
+nav ul ul a {
+	width: 100%;
+	padding: 8px 15px;
+	display: block;
+	color: #fff;
+	border-bottom: 1px solid rgb(192, 191, 212);
+}
+nav ul ul li:hover > a {
+	background: #09ebeb;
+	color: #fff;
+}
+
+/*
+================================================
+              Home Style
+================================================               
+*/
+.home {
+	height: 500px;
+	background-image: url(../images/Home/home-bg.jpg);
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	position: relative;
+}
+.home .home-info {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.home .home-info .htxt {
+	font-size: 60px;
+	font-weight: bold;
+	color: rgb(34, 32, 34);
+	font-family: Lucida-Sans;
+	margin-bottom: 20px;
+}
+.home .home-info .hsmalltxt {
+	font-size: 35px;
+
+	color: #eb5424;
+	font-family: Lucida-Sans;
+	margin-bottom: 20px;
+}
+.home .home-info .hpar {
+	font-size: 20px;
+
+	color: #888;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+.home .home-info .hpar span {
+	color: black;
+}
+.home .home-info .hbtn {
+	width: 150px;
+	background-color: #eb5424;
+	color: white;
+	border: 0;
+	font-size: 20px;
+	padding: 15px;
+	outline: none;
+	cursor: pointer;
+}
+.home .home-info .hbtn:hover {
+	background-color: white;
+	color: #eb5424;
+}
+
+@media (max-width: 850px) {
+	.home .home-info .htxt {
+		font-size: 40px;
+		color: whitesmoke;
+	}
+	.home .home-info .hsmalltxt {
+		font-size: 25px;
+	}
+	.home .home-info .hpar {
+		font-size: 15px;
+	}
+}
+/*
+================================================
+             Work Style
+================================================               
+*/
+.work {
+	height: auto;
+	padding: 50px 0;
+	background-color: white;
+}
+.work .work-title {
+	font-size: 60px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.work .work-title span {
+	font-weight: normal;
+}
+.work .part1 {
+	margin-top: 20px;
+	margin-left: 2%;
+	text-align: center;
+	width: 30%;
+	height: auto;
+	padding: 80px 0;
+	float: left;
+	border: 1px solid black;
+}
+
+.work .part1 .worktxt {
+	color: rgb(75, 70, 70);
+	font-size: 40px;
+	margin-bottom: 20px;
+	background-color: rgb(206, 206, 206);
+	padding: 40px 0;
+	cursor: pointer;
+	width: 100%;
+	outline: none;
+	border: none;
+}
+a {
+	text-decoration: none;
+	color: rgb(75, 70, 70);
+}
+.work .part1 .worktxt:hover {
+	background-color: rgb(246, 246, 246);
+}
+.work .part1 .worksmalltxt {
+	font-size: 25px;
+	color: #eb5424;
+	margin-bottom: 20px;
+}
+.work .line {
+	width: 60%;
+	margin: auto;
+	margin-bottom: 20px;
+}
+.work .part1 .workpar {
+	font-size: 16px;
+	color: #888;
+	margin-top: 20px;
+	padding: 15px;
+}
+@media (max-width: 820px) {
+	.work .part1 {
+		width: 100%;
+	}
+}
+
+/*
+================================================
+             Work2 Style
+================================================               
+*/
+.work h2 {
+	margin-top: 20px;
+}
+.work .part2 {
+	margin-top: 20px;
+	margin-left: 7%;
+	text-align: center;
+	width: 40%;
+	height: auto;
+	padding: 80px 0;
+	float: left;
+	margin-bottom: 20px;
+	border-radius: 30px;
+}
+.work .part2:hover {
+	background-color: rgb(236, 235, 235);
+}
+.work .part2 .worktxt {
+	color: rgb(75, 70, 70);
+	font-size: 40px;
+	margin-bottom: 20px;
+	background-color: rgb(102, 67, 67);
+	color: white;
+	padding: 20px 0;
+	width: 100%;
+	outline: none;
+	border: none;
+}
+.work .part2 .worktxt:hover {
+	background-color: white;
+	color: rgb(146, 42, 42);
+}
+.work .part2 .worksmalltxt {
+	font-size: 25px;
+	color: #251510;
+	margin-bottom: 20px;
+}
+.work .line {
+	width: 60%;
+	margin: auto;
+	margin-bottom: 20px;
+}
+.work .part2 .workpar {
+	font-size: 16px;
+	color: #888;
+	margin-top: 20px;
+	padding: 15px;
+}
+@media (max-width: 820px) {
+	.work .part2 {
+		width: 100%;
+	}
+}
+/*
+================================================
+             Footer Style
+================================================               
+*/
+
+footer {
+	background-color: #155775;
+	width: 100%;
+	height: 90px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	display: inline-block;
+	padding: 0px;
+	text-align: center;
+	text-justify: auto;
+	line-height: 90px;
+	border-radius: 10px;
+}
+
+.topfoot a {
+	float: left;
+	background: #155775;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	padding-left: 50px;
+	font-size: 16px;
+}
+
+.topfoot a:hover {
+	color: white;
+}
+
+/* start of login page  */
+
+/* Full-width input fields */
+input[type=text],
+input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+	background-color: #19c6cf;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 80px;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+	width: auto;
+	padding: 10px 18px;
+	padding-top: 0px;
+	background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainerlogin {
+	text-align: center;
+	margin: 24px 0 12px 0;
+	position: relative;
+}
+
+img.avatar {
+	width: 40%;
+	border-radius: 50%;
+}
+
+.containerlogin {
+	padding: 20px;
+}
+
+.containerlogin2 {
+	padding: 5px;
+	height: 20%;
+}
+
+span.psw {
+	float: right;
+	padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+	padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+	background-color: #20888b;
+	margin: 35px auto; /* 5% from the top, 15% from the bottom and centered */
+	border: 1px solid #888;
+	width: 28%; /* Could be more or less, depending on screen size */
+	height: 78%;
+}
+
+/* The Close Button (x) */
+.close {
+	position: absolute;
+	right: 25px;
+	top: 0;
+	color: #000;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: red;
+	cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+	from {
+		-webkit-transform: scale(0);
+	}
+	to {
+		-webkit-transform: scale(1);
+	}
+}
+
+@keyframes animatezoom {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+
+/* End of login page */
+
+/* start Sign up */
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus,
+input[type=password]:focus {
+	background-color: #ddd;
+	outline: none;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn2 {
+	padding: 14px 10px;
+	background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn2,
+.signupbtn {
+	float: left;
+	width: 50%;
+}
+
+/* Add padding to container elements */
+
+/* The Modal (background) */
+.modal2 {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+	padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal2-content {
+	background-color: #20888b;
+	margin: 35px auto; /* 5% from the top, 15% from the bottom and centered */
+	border: 1px solid #888;
+	width: 28%; /* Could be more or less, depending on screen size */
+	height: 85%;
+}
+/* Style the horizontal ruler */
+hr {
+	border: 1px solid #f1f1f1;
+	margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+	position: absolute;
+	right: 35px;
+	top: 15px;
+	font-size: 40px;
+	font-weight: bold;
+	color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+	color: #f44336;
+	cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+
+/* End of Sign up */
